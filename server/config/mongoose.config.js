@@ -5,7 +5,7 @@ module.exports = (db_name) => {
     .connect(`mongodb://localhost/${db_name}`, {
       useNewUrlParser: true,
       useUnifiedTopology: true,
-      useFindeAndModify: false,
+      useFindAndModify: false,
     })
     .then((res) => {
       console.log(`Connected to ${db_name}`);
