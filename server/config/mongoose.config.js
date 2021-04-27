@@ -8,9 +8,9 @@ module.exports = (db_name) => {
     })
     .then((res)=>{
         console.log(`Connected to ${db_name}`);
-        console.log(`Conn Success`, res);
+        console.log(`Conn Success Response: `, res);
     })
     .catch((err)=>{
         console.log(`Connection to ${db_name} Failed`, err);
-    })
+    });
 };
