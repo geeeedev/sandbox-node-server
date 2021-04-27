@@ -4,7 +4,7 @@ const db_name = "dbJokes";
 const express = require('express');
 
 
-//set up express and enabling req.body parsing
+//set up express; enabling request.body parsing
 const app = express();
 app.use(express.json());
 // app.use(cors());
@@ -18,4 +18,4 @@ app.listen(port, () =>{
 })
 
 //load mongoose connection file
-require('./config/...')(db_name);
+require('./config/mongoose.config')(db_name);
