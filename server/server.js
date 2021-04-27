@@ -10,7 +10,7 @@ app.use(express.json());
 // app.use(cors());
 
 //load routes file with app
-require('./routes/...')(app);
+require('./routes/joke.routes')(app);
 
 //ready for server to listen
 app.listen(port, () =>{
