@@ -4,7 +4,7 @@ const express = require("express");
 const cors = require("cors");
 
 //db connection setup
-require('./config')
+require('./config/mongoose.config')(dbName);
 
 //server setup
 const app = express();
