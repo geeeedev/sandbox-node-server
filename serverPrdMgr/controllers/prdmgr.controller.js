@@ -9,7 +9,7 @@ module.exports = {
         res.json(newPrd);
       })
       .catch((err) => {
-        res.json(err);
+        res.status(400).json(err);
       });
   },
   //once req is received, this req will go talk to db to find/get all data.
@@ -21,7 +21,7 @@ module.exports = {
         res.json(allPrds);
       })
       .catch((err) => {
-        res.json(err);
+        res.status(400).json(err);
       });
   },
   getOne(req, res) {
@@ -30,7 +30,7 @@ module.exports = {
         res.json(onePrd);
       })
       .catch((err) => {
-        res.json(err);
+        res.status(400).json(err);
       });
   },
   update(req, res) {
@@ -43,7 +43,7 @@ module.exports = {
         res.json(updatedPrd); //return it as an obj with its data in json
       })
       .catch((err) => {
-        res.json(err);
+        res.status(400).json(err);
       });
   },
   remove(req, res) {
@@ -52,7 +52,7 @@ module.exports = {
         res.json(deletedPrd);
       })
       .catch((err) => {
-        res.json(err);
+        res.status(400).json(err);
       });
   },
 };
