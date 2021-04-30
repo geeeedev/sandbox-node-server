@@ -12,7 +12,7 @@ app.use(express.json());
 app.use(cors());
 
 //route setup
-require('./routes')
+require('./routes/prdmgr.routes')(app);
 
 //server listens
 app.listen(port, ()=>{
