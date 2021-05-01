@@ -1,7 +1,7 @@
 // const PrdMgr = require("../models/prdmgr.model");
 const PrdMgrModel = require("../models/prdmgr.model");
 
-//controller house an object of functions
+//controller house an object of various functions
 module.exports = {
   create(req, res) {
     PrdMgrModel.create(req.body)
