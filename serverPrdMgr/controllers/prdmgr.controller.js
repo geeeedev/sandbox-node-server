@@ -24,6 +24,7 @@ module.exports = {
         res.status(400).json(err);
       });
   },
+  //getting one item, expecting to use params.id
   getOne(req, res) {
     PrdMgrModel.findById(req.params.id)
       .then((onePrd) => {
@@ -33,6 +34,7 @@ module.exports = {
         res.status(400).json(err);
       });
   },
+  //updating one item, expected to use params.id to find item AND req.body to change content
   update(req, res) {
     PrdMgrModel.findByIdAndUpdate(req.params.id, req.body, {
       runValidators: true,
@@ -46,6 +48,7 @@ module.exports = {
         res.status(400).json(err);
       });
   },
+  //getting one item, identifying by params.id
   remove(req, res) {
     PrdMgrModel.findByIdAndDelete(req.params.id)
       .then((deletedPrd) => {
