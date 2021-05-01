@@ -1,4 +1,4 @@
-const PrdMgr = require("../models/prdmgr.model");
+// const PrdMgr = require("../models/prdmgr.model");
 const PrdMgrModel = require("../models/prdmgr.model");
 
 //controller house an object of functions
